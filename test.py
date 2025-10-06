@@ -6,3 +6,8 @@ files = {
 }
 response = requests.post("http://127.0.0.1:8000/predict", files=files)
 print(response.json())
+print(response.json()['predicted_yield'])
+yield_pred = response.json()['predicted_yield']
+yield_pred/= 10  # Scale the yield prediction to match NDVI scale (0-1)
+print(f"Predicted Yield: {yield_pred}")
+print(f"Predicted Yield: {yield_pred/10}")

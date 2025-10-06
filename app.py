@@ -1,5 +1,9 @@
 # app.py
+'''
+to run:
 
+uvicorn app:app --reload
+'''
 from fastapi import FastAPI, File, UploadFile
 from fastapi.responses import JSONResponse
 import numpy as np
