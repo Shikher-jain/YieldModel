@@ -7,3 +7,6 @@ scikit-learn
 joblib
 pydantic
 python-dotenv
+matplotlib
+seaborn
+keras
